@@ -1,0 +1,146 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Air Conditioner
+
+Air Conditioner System to predict fan speed based on air temperature.
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+Temp IN [0,90]
+
+Fan_Speed OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Temp
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+cold TRI 0 0 50
+
+cool TRI 45 55 65
+
+just_right TRI 60 65 70
+
+warm TRI 65 75 85
+
+hot TRI 80 90 90
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Fan_Speed
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+stop TRI 0 0 0
+
+slow TRI 10 30 50
+
+medium TRI 40 50 60
+
+fast TRI 50 70 90
+
+blast TRI 80 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+3
+
+Enter the rules in this format: (Press x to finish)
+IN_variable set operator IN_variable set => OUT_variable set
+EXAMPLE::: x high or y medium => z low
+------------------------------------------------------------
+Temp cold and Temp cold => Fan_Speed stop
+
+Temp cool and Temp cool => Fan_Speed slow
+
+Temp just_right and Temp just_right => Fan_Speed medium
+
+Temp warm and Temp warm => Fan_Speed fast
+
+Temp hot and Temp hot => Fan_Speed blast
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+4
+
+Enter the crisp values:
+-----------------------
+Temp : 50
+
+Running the simulation...
+Fuzzification => done
+Inference => done
+Defuzzification => done
+
+:::FUZZY_SYSTEM_:::
+
+Air Conditioner
+Air Conditioner System to predict fan speed based on air temperature.
+
+The predicted Fan_Speed is slow  ( 30.0 ) 
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+Close
+

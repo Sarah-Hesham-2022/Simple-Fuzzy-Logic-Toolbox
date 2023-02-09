@@ -1,0 +1,219 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Benign or Malignant
+
+Medical Information System governing variables and rquired to predict decision D benign or malignant.
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+V1 IN [0,100]
+
+V2 IN [0,100]
+
+V3 IN [0,100]
+
+Y IN [0,100]
+
+Y OUT [0,100]
+
+D OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+V1
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 0 50
+
+Medium TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+V2
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 0 50
+
+Medium TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+V3
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 0 50
+
+Medium TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Y
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+D
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Benign TRI 0 0 100
+
+Malignant TRI 0 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+3
+
+Enter the rules in this format: (Press x to finish)
+IN_variable set operator IN_variable set => OUT_variable set
+EXAMPLE::: x high or y medium => z low
+------------------------------------------------------------
+V1 Low and V2 Medium => Y Low
+
+V1 Medium and V2 High => Y High
+
+Y Low and V3 Medium => D Benign
+
+Y High and V3 High => D Malignant
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+4
+
+Enter the crisp values:
+-----------------------
+V1 : 30
+
+V2 : 80
+
+V3 : 90
+
+Running the simulation...
+Fuzzification => done
+Inference => done
+Defuzzification => done
+
+:::FUZZY_SYSTEM_:::
+
+Benign or Malignant
+Medical Information System governing variables and rquired to predict decision D benign or malignant.
+
+The predicted D is Malignant  ( 58.333 ) 
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+Close
+

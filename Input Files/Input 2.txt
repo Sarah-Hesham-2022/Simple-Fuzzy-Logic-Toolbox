@@ -1,0 +1,42 @@
+1
+Automatic Washing Machine
+A controller for an automatic washing machine to determine the wash time using fuzzy logic.
+1
+percentage_dirt IN [0,100]
+percentage_softness IN [0,100]
+wash_time OUT [0,60]
+x
+2
+percentage_dirt
+small TRAP 0 0 20 40
+medium TRAP 20 40 60 80
+large TRAP 60 80 100 100
+x
+2
+percentage_softness
+soft TRAP 0 0 20 40
+ordinary TRAP 20 40 60 80
+stiff TRAP 60 80 100 100
+x
+2
+wash_time
+very_short TRI 0 0 15
+short TRI 0 15 30
+standard TRI 15 30 45
+long TRI 30 45 60
+very_long TRI 45 60 60
+x
+3
+percentage_dirt small and percentage_softness soft => wash_time very_short
+percentage_dirt medium and percentage_softness ordinary => wash_time standard
+percentage_dirt small and_not percentage_softness soft => wash_time short
+percentage_dirt medium and percentage_softness soft => wash_time short
+percentage_dirt medium and percentage_softness stiff => wash_time long
+percentage_dirt large and_not percentage_softness soft => wash_time very_long
+percentage_dirt large and percentage_softness soft => wash_time standard
+x
+4
+60
+25
+Close
+2

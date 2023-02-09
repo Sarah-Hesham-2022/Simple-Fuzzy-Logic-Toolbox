@@ -1,0 +1,1 @@
+All are diffrenet types of error input formats to test my program for error well handling and detection.

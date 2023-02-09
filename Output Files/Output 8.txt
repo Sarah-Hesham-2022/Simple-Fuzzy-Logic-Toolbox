@@ -1,0 +1,41 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Project Risk Estimation
+
+The problem is to estimate the risk level of a project based on the project funding and the technical experience of the project's team members.
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+proj_funding IN [0,100]
+
+exp_level IN [0,60]
+
+risk OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+4
+
+CAN'T START THE SIMULATION! Please add the fuzzy sets names , types and values first ,exit program.

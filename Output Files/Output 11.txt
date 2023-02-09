@@ -1,0 +1,6 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+3
+Incorrect Choice ,you have to choose 1 or 2 only not to enter 3

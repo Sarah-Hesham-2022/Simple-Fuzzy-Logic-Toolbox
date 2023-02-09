@@ -1,0 +1,161 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Speed Calculation
+
+Speed Calculation Program based on 2 inputs ,temperature and cloud cover
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+Temp IN [0,110]
+
+Cover IN [0,100]
+
+Speed OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Temp
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Freezing TRAP 0 0 30 50
+
+Cool TRI 30 50 70
+
+Warm TRI 50 70 90
+
+Hot TRAP 70 90 110 110
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Cover
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Sunny TRAP 0 0 20 40
+
+Partly_Cloudy TRI 20 50 80
+
+OverCast TRAP 60 80 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Speed
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Slow TRAP 0 0 25 75
+
+Fast TRAP 25 75 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+3
+
+Enter the rules in this format: (Press x to finish)
+IN_variable set operator IN_variable set => OUT_variable set
+EXAMPLE::: x high or y medium => z low
+------------------------------------------------------------
+Temp Warm and Cover Sunny => Speed Fast
+
+Temp Cool and Cover Partly_Cloudy => Speed Slow
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+4
+
+Enter the crisp values:
+-----------------------
+Temp : 65
+
+Cover : 25
+
+Running the simulation...
+Fuzzification => done
+Inference => done
+Defuzzification => done
+
+:::FUZZY_SYSTEM_:::
+
+Speed Calculation
+Speed Calculation Program based on 2 inputs ,temperature and cloud cover
+
+The predicted Speed is Fast  ( 65.909 ) 
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+Close
+

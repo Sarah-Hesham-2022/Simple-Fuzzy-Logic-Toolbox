@@ -1,0 +1,40 @@
+1
+Stock Market
+Closing price prediction for stock market based on two inputs opening price and previous day price
+1
+Op IN [0,100]
+Pdb IN [0,100]
+Cp OUT [0,100]
+x
+2
+Op
+Low TRI 0 0 50
+Medium TRI 0 50 100
+High TRI 50 100 100
+x
+2
+Pdb
+Low TRI 0 0 50
+Medium TRI 0 50 100
+High TRI 50 100 100
+x
+2
+Cp
+Very_Low TRI 0 0 25
+Low TRI 0 25 50
+Medium TRI 25 50 75
+High TRI 50 75 100
+Very_High 75 100 100
+x
+3
+Op Low and Pdb Low => Cp Very_Low
+Op Low or Pdb Low => Cp Low
+Op Medium and_not Pdb High => Cp Medium
+Op High or Pdb High => Cp High
+Op High and Pdb High => Cp Very_High
+x
+4
+30
+90
+Close
+2

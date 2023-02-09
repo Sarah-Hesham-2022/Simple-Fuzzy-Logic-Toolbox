@@ -1,0 +1,51 @@
+1
+Benign or Malignant
+Medical Information System governing variables and rquired to predict decision D benign or malignant.
+1
+V1 IN [0,100]
+V2 IN [0,100]
+V3 IN [0,100]
+Y IN [0,100]
+Y OUT [0,100]
+D OUT [0,100]
+x
+2
+V1
+Low TRI 0 0 50
+Medium TRI 0 50 100
+High TRI 50 100 100
+x
+2
+V2
+Low TRI 0 0 50
+Medium TRI 0 50 100
+High TRI 50 100 100
+x
+2
+V3
+Low TRI 0 0 50
+Medium TRI 0 50 100
+High TRI 50 100 100
+x
+2
+Y
+Low TRI 0 50 100
+High TRI 50 100 100
+x
+2
+D
+Benign TRI 0 0 100
+Malignant TRI 0 100 100
+x
+3
+V1 Low and V2 Medium => Y Low
+V1 Medium and V2 High => Y High
+Y Low and V3 Medium => D Benign
+Y High and V3 High => D Malignant
+x
+4
+30
+80
+90
+Close
+2

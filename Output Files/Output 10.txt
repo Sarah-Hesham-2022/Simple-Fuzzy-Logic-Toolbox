@@ -1,0 +1,97 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Project Risk Estimation
+
+The problem is to estimate the risk level of a project based on the project funding and the technical experience of the project's team members.
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+proj_funding IN [0,100]
+
+exp_level IN [0,60]
+
+risk OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+exp_level
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+beginner TRI 0 15 30
+
+intermediate TRI 15 30 45
+
+expert TRI 30 60 60
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+proj_funding
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+very_low TRAP 0 0 10 30
+
+low TRAP 10 30 40 60
+
+medium TRAP 40 60 70 90
+
+high TRAP 70 90 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+risks
+
+That variable does not exist in the system, exit program

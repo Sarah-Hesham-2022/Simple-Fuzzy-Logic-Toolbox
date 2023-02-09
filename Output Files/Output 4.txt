@@ -1,0 +1,171 @@
+Fuzzy Logic Toolbox
+===================
+1- Create a new fuzzy system
+2- Quit
+1
+Enter the system's name and a brief description:
+------------------------------------------------
+Stock Market
+
+Closing price prediction for stock market based on two inputs opening price and previous day price
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+1
+
+Enter the variable's name, type (IN/OUT) and range ([lower,upper]):
+EXAMPLE::: myVariable IN [0,100]
+(Press x to finish)
+Op IN [0,100]
+
+Pdb IN [0,100]
+
+Cp OUT [0,100]
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Op
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 0 50
+
+Medium TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Pdb
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Low TRI 0 0 50
+
+Medium TRI 0 50 100
+
+High TRI 50 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+2
+
+Enter the variable's name:
+--------------------------
+Cp
+
+Enter the fuzzy set name, type (TRI/TRAP) and values: (Press x to finish)
+EXAMPLE::: SetName TRI 0 20 30
+EXAMPLE::: SetName TRAP 0 20 30 40
+-----------------------------------------------------
+Very_Low TRI 0 0 25
+
+Low TRI 0 25 50
+
+Medium TRI 25 50 75
+
+High TRI 50 75 100
+
+Very_High 75 100 100
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+3
+
+Enter the rules in this format: (Press x to finish)
+IN_variable set operator IN_variable set => OUT_variable set
+EXAMPLE::: x high or y medium => z low
+------------------------------------------------------------
+Op Low and Pdb Low => Cp Very_Low
+
+Op Low or Pdb Low => Cp Low
+
+Op Medium and_not Pdb High => Cp Medium
+
+Op High or Pdb High => Cp High
+
+Op High and Pdb High => Cp Very_High
+
+x
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+4
+
+Enter the crisp values:
+-----------------------
+Op : 30
+
+Pdb : 90
+
+Running the simulation...
+Fuzzification => done
+Inference => done
+Defuzzification => done
+
+:::FUZZY_SYSTEM_:::
+
+Stock Market
+Closing price prediction for stock market based on two inputs opening price and previous day price
+
+The predicted Cp is Medium  ( 57.143 ) 
+
+Main Menu:
+==========
+1- Add variables.
+2- Add fuzzy sets to an existing variable.
+3- Add rules.
+4- Run the simulation on crisp values.
+5- Or Enter ::: Close
+Close
+
