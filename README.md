@@ -77,28 +77,50 @@ Fuzzy Logic Toolbox with GUI and Files Analysis.
 
 ![image](https://user-images.githubusercontent.com/112272836/217865302-d447f1e5-7ad2-4836-9850-6f1e1755dc93.png)
 
--Let us see together how it works, I have provided 11 test cases all in the folders with their input/output files and the description of the problem:
+-Let us see together how it works, I have provided 11 test cases all in the folders with their input/output files and the description of the problem.
 
 -You can solve it manually to make sure the output is correct, but stick to the rules to get the exact accurate numbers results.
 
+-First when the application is opened:
+
 ![image](https://user-images.githubusercontent.com/112272836/217866032-00235579-4c96-4326-aadd-691ee3a8d24d.png)
+
+-Then you click on the upload button to choose the input and then the output desired files from your PC:
 
 ![image](https://user-images.githubusercontent.com/112272836/217866204-15da35cb-d5b4-45ca-bf4d-7a5e9634f252.png)
 
 ![image](https://user-images.githubusercontent.com/112272836/217866354-791ac327-97bb-4ae0-9200-5ef1d104ca06.png)
 
+-Example 1 :
+
 ![image](https://user-images.githubusercontent.com/112272836/217866432-7f3ffc4e-794f-45af-a419-9f3e295058b6.png)
+
+-Example 2 :
 
 ![image](https://user-images.githubusercontent.com/112272836/217866657-2f090023-6735-496c-be67-1c8edc0000e0.png)
 
+-Example 3 :
+
 ![image](https://user-images.githubusercontent.com/112272836/217866756-94ac885e-a94d-486b-ab78-f27182b608a1.png)
+
+-Example 4 :
 
 ![image](https://user-images.githubusercontent.com/112272836/217866849-d3c5dacd-217d-4e46-8dc3-8fa6eeab912d.png)
 
+-Example 5 :
+
 ![image](https://user-images.githubusercontent.com/112272836/217866963-3399d70e-4f89-452c-acad-ca8d80e12764.png)
+
+-Example 6 :
 
 ![image](https://user-images.githubusercontent.com/112272836/217867049-13c6bdb4-3372-4e21-b904-5013dd9d7f7e.png)
 
+-Example 7 :
+
 ![image](https://user-images.githubusercontent.com/112272836/217867155-96b16ad6-c79b-4823-8908-b63dfe535c89.png)
 
+-Example 8,9,10,11 :
+
 ![image](https://user-images.githubusercontent.com/112272836/217867253-6aec374a-6af8-4989-81f8-8e761ccc33a0.png)
+
+-Don't forget to check the provided input files to see the format and also the provided output files to see how the result is different from one case to another.
