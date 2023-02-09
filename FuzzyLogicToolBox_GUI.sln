@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GeneticAlgorithms_FuzzyLogicToolBox_GUI", "GeneticAlgorithms_FuzzyLogicToolBox_GUI.pyproj", "{8B722D4F-49A2-4343-A051-FCAD9AB83F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B722D4F-49A2-4343-A051-FCAD9AB83F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B722D4F-49A2-4343-A051-FCAD9AB83F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCD5A381-9969-472A-99A6-4B13EA26C6A1}
+	EndGlobalSection
+EndGlobal
